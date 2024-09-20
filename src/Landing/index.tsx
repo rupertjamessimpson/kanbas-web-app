@@ -6,7 +6,8 @@ export default function Landing() {
     <div className="landing-container">
       <h1 className="mb-4">Rupert Simpson's Homework Page</h1>
       <div className="mb-3">
-        <Link to="/kanbas/Dashboard">Kanbas</Link>
+        <Link to="/kanbas/Dashboard">Kanbas</Link>{" | "}
+        <a href="https://github.com/rupertjamessimpson/kanbas-web-app">GitHub</a>
       </div>
       <div>
         <Link to="/labs/lab1" className="mb-3">Lab 1</Link>{" | "}
