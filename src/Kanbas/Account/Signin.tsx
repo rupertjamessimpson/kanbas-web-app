@@ -1,16 +1,14 @@
-import { Link } from "react-router-dom";
 export default function Signin() {
   return (
     <div id="wd-signin-screen">
-      <h3>Sign in</h3>
-      <input id="wd-username" placeholder="username" /> <br />
-      <input id="wd-password" placeholder="password" type="password" /> <br />
-      <Link id="wd-signin-btn" to="/Kanbas/Dashboard">
-        Sign in
-      </Link>
-      <br />
-      <Link id="wd-signup-link" to="/Kanbas/Account/Signup">
-        Sign up
-      </Link>
+      <form id="wd-signin-form">
+        <div className="form-group">
+          <h3>Sign in</h3>
+          <input id="wd-username" className="form-control w-100 mb-2" placeholder="username" />
+          <input id="wd-password" className="form-control w-100 mb-2" placeholder="password" type="password" />
+          <button id="wd-signin-btn" className="btn btn-primary w-100 mb-2">Sign in</button>
+        </div>
+        <a href="/Kanbas/Account/Signup" className="mt-3 d-block">Sign up</a>
+      </form>
     </div>
 );}
